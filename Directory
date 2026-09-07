@@ -1,0 +1,15 @@
+Cash-Flow-Forecasting-Pipeline/
+├── .github/workflows/
+│   └── pipeline.yml       # Scheduled pipeline run (e.g., every Monday)
+├── config/
+│   └── settings.yaml      # Model hyperparameters and data thresholds
+├── data/
+│   ├── raw/               # Simulation inputs (historical transactions)
+│   └── processed/         # Cleaned features ready for the model
+├── src/
+│   ├── __init__.py
+│   ├── ingest.py          # Extracts data from bank APIs/CSVs
+│   ├── transform.py       # Aggregates daily/weekly cash positions
+│   └── forecast.py        # Statistical (ARIMA) or ML forecasting engine
+├── requirements.txt       # Dependencies (pandas, statsmodels, scikit-learn)
+└── README.md
